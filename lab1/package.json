@@ -1,0 +1,9 @@
+{
+  "name": "cs546",
+  "version": "0.0.0",
+  "description": "CS546",
+  "main": "app.js",
+  "author": {
+    "name": "Ankit"
+  }
+}

@@ -1,0 +1,70 @@
+// JavaScript source code
+const express = require('express');
+const router = express.Router();
+const data = require("../data");
+const myInfo = data.myData;
+
+router.get("/", (req, res) => {
+    let data = myInfo.getMyStory();
+    if(data !== null){
+        res.json(data);
+    }
+    else{
+        res.status(500).send();
+    }
+});
+
+router.post("/", (req, res) => {
+    // Not implemented
+    res.status(501).send();
+});
+
+module.exports = router;
+----------------------------------------
+// JavaScript source code
+const express = require('express');
+const router = express.Router();
+const data = require("../data");
+const myInfo = data.myData;
+
+router.get("/", (req, res) => {
+    let data = myInfo.getAbout();
+    if (data !== null) {
+        res.json(data);
+    }
+    else {
+        res.status(500).send();
+    }
+});
+
+router.post("/", (req, res) => {
+    // Not implemented
+    res.status(501).send();
+});
+
+module.exports = router;
+
+
+-------------------------------
+// JavaScript source code
+const express = require('express');
+const router = express.Router();
+const data = require("../data");
+const myInfo = data.myData;
+
+router.get("/", (req, res) => {
+    let data = myInfo.getEducation();
+    if (data !== null) {
+        res.json(data);
+    }
+    else {
+        res.status(500).send();
+    }
+});
+
+router.post("/", (req, res) => {
+    // Not implemented
+    res.status(501).send();
+});
+
+module.exports = router;
